@@ -1,0 +1,71 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+      <mat-list>
+        <mat-list-item><a href="#" class="icon_menu"><i> User Image</i>User Image</a></mat-list-item>
+        <mat-list-item><a href="#"><i class="material-icons">news</i>News Feed</a></mat-list-item>
+        <mat-list-item><a href="#"><i class="material-icons">messenger</i>Messenger</a></mat-list-item>
+        <mat-list-item><a href="#" class="icon_menu"><i> tv</i>Watch</a></mat-list-item>
+        <mat-list-item><a href="#" class="icon_menu"><i> market</i>Marketplace</a></mat-list-item>
+      </mat-list>
+      <h3> Shortcuts </h3>
+      <mat-list>
+        <li><a href="#" class="icon_menu"><i> group</i>Housing Group</a></li>
+      </mat-list>
+      <h3> Explore </h3>
+      <mat-list> <!--figureout mat-icon thing-->
+        <mat-list-item><a href="#" class="icon_menu"><i> calender</i>Events</a></mat-list-item>
+        <mat-list-item><a href="#"><i class="material-icons"></i>Friends List</a></mat-list-item>
+        <mat-list-item><a href="#"><i class="material-icons"></i>Groups</a></mat-list-item>
+        <mat-list-item><a href="#" class="icon_menu"><i> </i>Pages</a></mat-list-item>
+        <mat-list-item><a href="#" class="icon_menu"><i> </i>Ads Manager</a></mat-list-item>
+        <mat-list-item><a href="#"><i class="material-icons"></i>Fundraiser</a></mat-list-item>
+        <mat-list-item><a href="#" class="icon_menu"><i> </i>Order Food</a></mat-list-item>
+        <mat-list-item><a href="#" class="icon_menu"><i> </i>On This Day</a></mat-list-item>
+        <mat-list-item><a href="#" class="icon_menu"><i> </i>Explore Feed</a></mat-list-item>   
+      </mat-list>
+    </mat-drawer>
+    <mat-drawer-content>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title> Create Post </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <form class="input-form">
+            <mat-form-field class="input-full-width">
+              <textarea matInput placeholder="Write something here..."></textarea>
+            </mat-form-field>
+          </form>
+        </mat-card-content>
+        <mat-card-actions>
+          <mat-chip-list aria-label="Fish selection">
+            <button mat-button><mat-chip color="">Photo/Video</mat-chip></button>
+            <button mat-button><mat-chip color="">Tag a Friend</mat-chip></button>
+            <button mat-button><mat-chip color="" selected>Check-in</mat-chip></button>
+            <button mat-button><mat-chip color="" selected>...</mat-chip></button>
+          </mat-chip-list>
+        </mat-card-actions>
+      </mat-card>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>User Name </mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              <!--location service-->
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-actions>
+          <button mat-button>Like <i></i></button>
+          <button mat-button>Comment<i></i></button>
+          <button mat-button>Share<i></i></button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-drawer-content>
+</mat-drawer-container>
