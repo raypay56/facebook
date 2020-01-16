@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './mainnav/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SidenavComponent } from './navbar/sidenav/sidenav.component';
+import { SidenavComponent } from './mainnav/sidenav/sidenav.component';
 import { DemoMaterialModule } from './material-module';
+import { HttpClientModule } from '@angular/common/http';
+import { FeedDataService } from './services/feed-data.service';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 @NgModule({
   declarations: [
@@ -19,8 +23,10 @@ import { DemoMaterialModule } from './material-module';
     AppRoutingModule,
     BrowserAnimationsModule,
     DemoMaterialModule,
+    HttpClientModule,
+    MDBBootstrapModule.forRoot()
   ],
-  providers: [],
+  providers: [FeedDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
